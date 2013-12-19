@@ -12,7 +12,7 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'super)
 
-(prelude-require-packages '(ujelly-theme))
+(prelude-require-packages '(ujelly-theme flymake-cursor flycheck))
 
 (load-theme 'ujelly t)
 
@@ -20,4 +20,5 @@
 
 (setq prelude-flyspell nil)
 
+(setq flymake-run-in-place nil)
 ;;; emacs_custom.el ends here
