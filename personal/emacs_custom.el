@@ -12,7 +12,7 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'super)
 
-(prelude-require-packages '(ujelly-theme flymake-cursor flycheck company company-go))
+(prelude-require-packages '(ujelly-theme go-mode flymake-cursor flycheck company company-go))
 
 (load-theme 'ujelly t)
 
