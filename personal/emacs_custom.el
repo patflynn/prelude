@@ -12,7 +12,7 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'super)
 
-(prelude-require-packages '(ujelly-theme go-mode flymake-cursor flycheck company company-go))
+(prelude-require-packages '(ujelly-theme go-mode flymake-cursor flycheck company company-go yaml-mode js2-mode))
 
 (load-theme 'ujelly t)
 
@@ -21,6 +21,8 @@
 (setq prelude-flyspell nil)
 
 (setq flymake-run-in-place nil)
+
+(scroll-bar-mode -1)
 
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
