@@ -96,7 +96,7 @@ By default most of the modules that ship with Prelude are not loaded.
 ## Installing Emacs 24
 
 Obviously to use the Emacs Prelude you have to install Emacs 24
-first. Have a look at the [WikEmacs articles on installing Emacs](http://wikemacs.org/wiki/Installing_Emacs).
+first. Have a look at the [WikEmacs articles on installing Emacs](http://wikemacs.org/index.php/Installing_Emacs).
 
 ## Installation
 
@@ -534,13 +534,18 @@ afterwards.
 This is not a bug - it's a feature! I firmly believe that the one true
 way to use Emacs is by using it the way it was intended to be used (as
 far as navigation is concerned at least). That's why I've disabled all
-movement commands with arrows (and keys like page up, page down, etc) - to prevent you from being tempted to
-use them.
+movement commands with arrows (and keys like page up, page down,
+etc) - to prevent you from being tempted to use them.
 
-If you'd still like to use the arrow keys just invoke `M-x
-guru-mode` to enable them for the duration of your
-current Emacs session or add the following snippet to your
-personal Emacs customization to enable them permanently:
+If you'd like to be able to use the arrow keys (but still be reminded of
+the alternatives) put this in your personal config:
+
+```lisp
+(setq guru-warn-only t)
+```
+
+To disable `guru-mode` completely add the following snippet to your
+personal Emacs config:
 
 ```lisp
 (setq prelude-guru nil)
